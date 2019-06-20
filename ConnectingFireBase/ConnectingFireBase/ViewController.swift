@@ -7,14 +7,27 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
-
+  
+  // create class member
+  var dataBaseRef:DatabaseReference!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
+
+    // create instance
+    dataBaseRef = Database.database().reference()
+    storeNewUser()
+    
   }
 
-
+  // store one user as a new user
+  func storeNewUser() {
+    print("start")
+    self.dataBaseRef.child("users").setValue(["username":"Kazu"])
+    print("end")
+  }
 }
 

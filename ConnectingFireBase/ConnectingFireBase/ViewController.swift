@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     // create instance
     dataBaseRef = Database.database().reference()
     storeNewUser()
-    
+    loadUser()
   }
 
   // store one user as a new user
@@ -28,6 +28,12 @@ class ViewController: UIViewController {
     print("start")
     self.dataBaseRef.child("users").setValue(["username":"Kazu"])
     print("end")
+  }
+
+  func loadUser() {
+    self.dataBaseRef.observe(.value) { (snap: DataSnapshot) in
+      print((snap.value! as AnyObject).description!)
+    }
   }
 }
 

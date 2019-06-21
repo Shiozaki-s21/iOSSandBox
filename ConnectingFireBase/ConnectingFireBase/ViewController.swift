@@ -19,7 +19,7 @@ class ViewController: UIViewController {
 
     // create instance
     dataBaseRef = Database.database().reference()
-    storeNewUser()
+//    storeNewUser()
     loadUser()
   }
 
@@ -31,8 +31,9 @@ class ViewController: UIViewController {
   }
 
   func loadUser() {
-    self.dataBaseRef.observe(.value) { (snap: DataSnapshot) in
-      print((snap.value! as AnyObject).description!)
+    self.dataBaseRef.child("users").observe(.value) { (snap: DataSnapshot) in
+      let dict = snap.value as? [String:AnyObject] ?? [:]
+      print(dict["username"]!)
     }
   }
 }

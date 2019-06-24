@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="56133bf4-7e67-4067-93b5-914f10766f84" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ConnectingFireBase/ViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ConnectingFireBase/ViewController.swift" afterDir="false" />
-    </list>
+    <list default="true" id="56133bf4-7e67-4067-93b5-914f10766f84" name="Default Changelist" comment="" />
     <ignored path="$USER_HOME$/Library/Caches/AppCode2019.1/DerivedData/ConnectingFireBase-gdyavfstowvcbkexqzetbdcvoenj/Build/Intermediates.noindex/" />
     <ignored path="$USER_HOME$/Library/Caches/AppCode2019.1/DerivedData/ConnectingFireBase-gdyavfstowvcbkexqzetbdcvoenj/Build/Products/" />
     <ignored path="$USER_HOME$/Library/Caches/AppCode2019.1/DerivedData/ConnectingFireBase-dkketdufodfgkzcxlijpicddawme/Build/Intermediates.noindex/" />
@@ -13,7 +11,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_2cc472b164bbed4650e0d22978f67ac1039487a4" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">

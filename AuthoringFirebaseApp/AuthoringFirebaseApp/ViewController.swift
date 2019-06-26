@@ -9,12 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+  @IBOutlet var emailTextBox: UITextField!
+  
+  @IBOutlet var passwordTextBox: UITextField!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
   }
 
-
+  @IBAction func loginTapped(_ sender: Any) {
+  }
+  
 }
 

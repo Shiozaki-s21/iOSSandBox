@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'AuthoringFirebaseApp' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for AuthoringFirebaseApp
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  
+  target 'AuthoringFirebaseAppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'AuthoringFirebaseAppUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

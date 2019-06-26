@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="56133bf4-7e67-4067-93b5-914f10766f84" name="Default Changelist" comment="" />
+    <list default="true" id="56133bf4-7e67-4067-93b5-914f10766f84" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../AuthoringFirebaseApp/AuthoringFirebaseApp.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../AuthoringFirebaseApp/AuthoringFirebaseApp.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AuthoringFirebaseApp/AuthoringFirebaseApp.xcodeproj/project.xcworkspace/xcuserdata/subarushiozaki.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/../AuthoringFirebaseApp/AuthoringFirebaseApp.xcodeproj/project.xcworkspace/xcuserdata/subarushiozaki.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AuthoringFirebaseApp/AuthoringFirebaseApp.xcodeproj/xcuserdata/subarushiozaki.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../AuthoringFirebaseApp/AuthoringFirebaseApp.xcodeproj/xcuserdata/subarushiozaki.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+    </list>
     <ignored path="$USER_HOME$/Library/Caches/AppCode2019.1/DerivedData/ConnectingFireBase-gdyavfstowvcbkexqzetbdcvoenj/Build/Intermediates.noindex/" />
     <ignored path="$USER_HOME$/Library/Caches/AppCode2019.1/DerivedData/ConnectingFireBase-gdyavfstowvcbkexqzetbdcvoenj/Build/Products/" />
     <ignored path="$USER_HOME$/Library/Caches/AppCode2019.1/DerivedData/ConnectingFireBase-dkketdufodfgkzcxlijpicddawme/Build/Intermediates.noindex/" />
@@ -57,26 +61,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="Cidr.FilesView" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="ConnectingFireBase" type="1d218c8b:XcodeProjectNode" />
-            </path>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="ConnectingFireBase" type="1d218c8b:XcodeProjectNode" />
-              <item name="ConnectingFireBase" type="fcab9f18:XcodeViewNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />

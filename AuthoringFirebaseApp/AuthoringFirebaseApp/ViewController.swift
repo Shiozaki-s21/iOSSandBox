@@ -48,9 +48,6 @@ class ViewController: UIViewController {
     inputStackView.axis = .vertical
     inputStackView.alignment = .center
     inputStackView.distribution = .equalCentering
-
-
-
     
     // implement emailTextBox
     inputStackView.addArrangedSubview(emaliTextBox)
@@ -73,6 +70,10 @@ class ViewController: UIViewController {
     loginButton.backgroundColor = .blue
     loginButton.setTitle("sign in", for: .normal)
     loginButton.addTarget(self, action: #selector(tappedSignIn(sender:)), for: .touchDown)
+    loginButton.topAnchor.constraint(equalTo: inputStackView.bottomAnchor).isActive = true
+    loginButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+    loginButton.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.3).isActive = true
+
 
     // create stackView for whole view
     let wholeView:UIStackView = UIStackView()
@@ -82,6 +83,16 @@ class ViewController: UIViewController {
     wholeView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
     wholeView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
     wholeView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+    wholeView.distribution = .fillEqually
+    wholeView.alignment = .center
+    wholeView.axis = .vertical
+
+
+//    wholeView.addSubview(titleLabel)
+//    wholeView.addSubview(inputStackView)
+//    wholeView.addSubview(loginButton)
+
+
 
   }
 

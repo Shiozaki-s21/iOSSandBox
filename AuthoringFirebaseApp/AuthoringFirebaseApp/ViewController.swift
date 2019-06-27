@@ -22,7 +22,11 @@ class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+
+    createSignInView()
+  }
+
+  fileprivate func createSignInView() {
     // creating UI
     // title label
     view.addSubview(titleLabel)
@@ -48,7 +52,7 @@ class ViewController: UIViewController {
     inputStackView.axis = .vertical
     inputStackView.alignment = .center
     inputStackView.distribution = .equalCentering
-    
+
     // implement emailTextBox
     inputStackView.addArrangedSubview(emaliTextBox)
     emaliTextBox.translatesAutoresizingMaskIntoConstraints = false
@@ -63,7 +67,7 @@ class ViewController: UIViewController {
     passwordTextBox.widthAnchor.constraint(equalTo: inputStackView.widthAnchor).isActive = true
 //    passwordTextBox.heightAnchor.constraint(equalTo: inputStackView.heightAnchor, multiplier: 0.4).isActive = true
     passwordTextBox.placeholder = "password"
-    
+
     // implement sign in button
     view.addSubview(loginButton)
     loginButton.translatesAutoresizingMaskIntoConstraints = false
@@ -86,14 +90,6 @@ class ViewController: UIViewController {
     wholeView.distribution = .fillEqually
     wholeView.alignment = .center
     wholeView.axis = .vertical
-
-
-//    wholeView.addSubview(titleLabel)
-//    wholeView.addSubview(inputStackView)
-//    wholeView.addSubview(loginButton)
-
-
-
   }
 
   @objc func tappedSignIn(sender:Any) {

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SignUpViewController: UIViewController {
   
@@ -78,6 +79,12 @@ class SignUpViewController: UIViewController {
   }
   
   @objc func tappedSignUp(sender:UIButton) {
-    print("kicked method")
+    Auth.auth().createUser(withEmail: emaliTextBox.text!, password: passwordTextBox.text!) {(user, error) in
+      if error != nil {
+        print("rejected")
+      } else {
+        print("accepted")
+      }
+    }
   }
 }

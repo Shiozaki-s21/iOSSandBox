@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SignInViewController: UIViewController {
 
@@ -79,7 +80,12 @@ class SignInViewController: UIViewController {
   }
 
   @objc func tappedSignIn(sender:UIButton) {
-    print("kicked method")
+    Auth.auth().signIn(withEmail: emaliTextBox.text!, password: passwordTextBox.text!) { (user, error) in
+      if error != nil {
+        print("Failed")
+      } else {
+        print("Success")
+      }
+    }
   }
-
 }

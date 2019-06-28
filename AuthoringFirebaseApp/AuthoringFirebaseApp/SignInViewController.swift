@@ -71,26 +71,14 @@ class SignInViewController: UIViewController {
     loginButton.translatesAutoresizingMaskIntoConstraints = false
     loginButton.backgroundColor = .blue
     loginButton.setTitle("sign in", for: .normal)
-    loginButton.addTarget(self, action: #selector(tappedSignIn(sender:)), for: .touchDown)
+    loginButton.addTarget(self, action: #selector(tappedSignIn(sender:)), for: .touchUpInside)
     loginButton.topAnchor.constraint(equalTo: inputStackView.bottomAnchor).isActive = true
     loginButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
     loginButton.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.3).isActive = true
-
-
-    // create stackView for whole view
-    let wholeView: UIStackView = UIStackView()
-    view.addSubview(wholeView)
-    wholeView.translatesAutoresizingMaskIntoConstraints = false
-    wholeView.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
-    wholeView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-    wholeView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-    wholeView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-    wholeView.distribution = .fillEqually
-    wholeView.alignment = .center
-    wholeView.axis = .vertical
+    
   }
 
-  @objc func tappedSignIn(sender:Any) {
+  @objc func tappedSignIn(sender:UIButton) {
     print("kicked method")
   }
 

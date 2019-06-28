@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46c4799d-d955-4276-9dce-e7e8fe3c5764" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/AuthoringFirebaseApp/MenuViewController.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthoringFirebaseApp/SignInViewController.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthoringFirebaseApp/SignUpViewController.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthoringFirebaseApp.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/AuthoringFirebaseApp.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthoringFirebaseApp/Base.lproj/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/AuthoringFirebaseApp/Base.lproj/Main.storyboard" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthoringFirebaseApp/ViewController.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthoringFirebaseApp/SignInViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/AuthoringFirebaseApp/SignInViewController.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthoringFirebaseApp/SignUpViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/AuthoringFirebaseApp/SignUpViewController.swift" afterDir="false" />
     </list>
     <ignored path="$USER_HOME$/Library/Caches/AppCode2019.1/DerivedData/AuthoringFirebaseApp-fpaibnkjqtsmcyglpixhkqwtyyxg/Build/Intermediates.noindex/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,8 +48,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AuthoringFirebaseApp/SignInViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="58" column="22" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
+            <state relative-caret-position="348">
+              <caret line="55" selection-start-line="55" selection-end-line="55" />
             </state>
           </provider>
         </entry>
@@ -179,12 +174,12 @@
       <updated>1561338708511</updated>
       <workItem from="1561338711595" duration="3094000" />
       <workItem from="1561421008422" duration="9962000" />
-      <workItem from="1561538011976" duration="10262000" />
+      <workItem from="1561538011976" duration="11425000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23318000" />
+    <option name="totallyTimeSpent" value="24481000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -206,7 +201,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3290461" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39978564" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3290461" />
@@ -268,8 +263,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AuthoringFirebaseApp/SignInViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="58" column="22" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
+        <state relative-caret-position="348">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
         </state>
       </provider>
     </entry>

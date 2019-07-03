@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Firebase
+import FirebaseAuth
 
 class SignUpViewController: UIViewController {
   
@@ -86,5 +86,9 @@ class SignUpViewController: UIViewController {
         print("accepted")
       }
     }
+  }
+
+  @objc func tappedSignUpByGmail(sender: UIButton) {
+
   }
 }

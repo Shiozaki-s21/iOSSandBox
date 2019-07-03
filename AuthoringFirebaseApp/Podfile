@@ -8,6 +8,7 @@ target 'AuthoringFirebaseApp' do
   # Pods for AuthoringFirebaseApp
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
   
   target 'AuthoringFirebaseAppTests' do
     inherit! :search_paths

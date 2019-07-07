@@ -9,9 +9,8 @@
 import UIKit
 import FirebaseAuth
 import GoogleSignIn
-//import Firebaseimport
 
-class SignInViewController: UIViewController {
+class SignInViewController: UIViewController, GIDSignInUIDelegate {
 
   // label
   let titleLabel:UILabel = UILabel()
@@ -24,10 +23,26 @@ class SignInViewController: UIViewController {
   let loginButton:UIButton = UIButton()
 
   override func viewDidLoad() {
-
     super.viewDidLoad()
 
-    createSignInView()
+    // to create UI
+//    createSignInView()
+  createGoogleSignIn()
+
+    // to implement setting delegate
+    GIDSignIn.sharedInstance().uiDelegate = self
+    GIDSignIn.sharedInstance().signIn()
+
+  }
+
+
+  fileprivate func createGoogleSignIn() {
+    let googleButton:GIDSignInButton = GIDSignInButton()
+    googleButton.translatesAutoresizingMaskIntoConstraints = false
+    view.addSubview(googleButton)
+    googleButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+    googleButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+
   }
 
   fileprivate func createSignInView() {

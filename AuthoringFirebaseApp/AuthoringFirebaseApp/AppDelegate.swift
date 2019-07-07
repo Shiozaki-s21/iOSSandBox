@@ -13,16 +13,36 @@ import GoogleSignIn
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
+
   func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-    
+
+   if let error = error {
+     return
+   }
+
+    guard let authentication = user.authentication else { return }
+    let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken, accessToken: authentication.accessToken)
+
+    // To sing-in process
+    Auth.auth().signInAndRetrieveData(with: credential) { (authResult, error) in
+      if let error = error {
+        // Error process
+        print("Error")
+      } else {
+        // Login process
+        print("Login")
+      }
+    }
   }
-  
+
+  func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
+    // TODO Perform any operations when the user disconnects from app here.
+  }
 
   var window: UIWindow?
 
   @available(iOS 9.0, *)
   func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any]) -> Bool {
-//    fatalError("application(_:open:options:) has not been implemented")
     return GIDSignIn.sharedInstance().handle(url, sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String, annotation: [:])
   }
 

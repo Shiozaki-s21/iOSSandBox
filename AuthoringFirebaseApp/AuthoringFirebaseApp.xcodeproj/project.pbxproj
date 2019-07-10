@@ -19,6 +19,7 @@
 		0C58CA1522C591A600E74CCD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C58CA1422C591A600E74CCD /* MenuViewController.swift */; };
 		0C58CA1722C5954E00E74CCD /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C58CA1622C5954E00E74CCD /* SignUpViewController.swift */; };
 		0C58CA1922C5968500E74CCD /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C58CA1822C5968500E74CCD /* SignInViewController.swift */; };
+		0C8D095C22D5562800F5BD39 /* UserSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8D095B22D5562800F5BD39 /* UserSettingViewController.swift */; };
 		72CAB4A91478C02F10118B5D /* Pods_AuthoringFirebaseAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8062DDED854785A0AF5F50 /* Pods_AuthoringFirebaseAppUITests.framework */; };
 		AE8DFF26C03EE0ECE93E5421 /* Pods_AuthoringFirebaseAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CEA3B4B2BEA8366983B451B /* Pods_AuthoringFirebaseAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -58,6 +59,7 @@
 		0C58CA1422C591A600E74CCD /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		0C58CA1622C5954E00E74CCD /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		0C58CA1822C5968500E74CCD /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		0C8D095B22D5562800F5BD39 /* UserSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingViewController.swift; sourceTree = "<group>"; };
 		73F874A04CC385A4DE4E973E /* Pods-AuthoringFirebaseAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthoringFirebaseAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AuthoringFirebaseAppUITests/Pods-AuthoringFirebaseAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		87EF076FBC29CEADF76548A3 /* Pods-AuthoringFirebaseAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthoringFirebaseAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AuthoringFirebaseAppTests/Pods-AuthoringFirebaseAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		9CEA3B4B2BEA8366983B451B /* Pods_AuthoringFirebaseAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuthoringFirebaseAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +128,7 @@
 				0C4DE17422C059140087EFA7 /* ViewController.swift */,
 				0C58CA1822C5968500E74CCD /* SignInViewController.swift */,
 				0C4DE17622C059140087EFA7 /* Main.storyboard */,
+				0C8D095B22D5562800F5BD39 /* UserSettingViewController.swift */,
 				0C58CA1422C591A600E74CCD /* MenuViewController.swift */,
 				0C58CA1622C5954E00E74CCD /* SignUpViewController.swift */,
 				0C4DE1A022C1B1900087EFA7 /* GoogleService-Info.plist */,
@@ -409,6 +412,7 @@
 				0C58CA1522C591A600E74CCD /* MenuViewController.swift in Sources */,
 				0C58CA1722C5954E00E74CCD /* SignUpViewController.swift in Sources */,
 				0C58CA1922C5968500E74CCD /* SignInViewController.swift in Sources */,
+				0C8D095C22D5562800F5BD39 /* UserSettingViewController.swift in Sources */,
 				0C4DE17322C059140087EFA7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

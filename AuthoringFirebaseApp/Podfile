@@ -8,6 +8,7 @@ target 'AuthoringFirebaseApp' do
   # Pods for AuthoringFirebaseApp
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
   pod 'GoogleSignIn'
   
   target 'AuthoringFirebaseAppTests' do

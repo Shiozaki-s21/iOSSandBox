@@ -7,10 +7,39 @@
 //
 
 import UIKit
+import Firebase
 import FirebaseAuth
 import GoogleSignIn
 
-class SignInViewController: UIViewController, GIDSignInUIDelegate {
+class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
+
+  func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+
+    if let error = error {
+      return
+    }
+
+    guard let authentication = user.authentication else { return }
+    let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken, accessToken: authentication.accessToken)
+
+    // To sing-in process
+    Auth.auth().signInAndRetrieveData(with: credential) { (authResult, error) in
+      if let error = error {
+        // Error process
+        print("Error")
+      } else {
+        // Login process
+        print("Login")
+        self.performSegue(withIdentifier: "signinToUserSetting", sender: nil)
+      }
+    }
+  }
+
+  func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
+    // TODO Perform any operations when the user disconnects from app here.
+  }
+
+
 
   // label
   let titleLabel:UILabel = UILabel()
@@ -23,7 +52,10 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate {
   let loginButton:UIButton = UIButton()
 
   override func viewDidLoad() {
+
     super.viewDidLoad()
+    GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
+    GIDSignIn.sharedInstance().delegate = self
 
     // to create UI
 //    createSignInView()

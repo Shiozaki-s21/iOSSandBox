@@ -10,6 +10,14 @@ import UIKit
 
 class UserSettingViewController: UIViewController {
 
+    // user name label which is editable
+
+    // user profile picture
+
+    // user bio
+
+    // submit button(if auto save doesn't work)
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

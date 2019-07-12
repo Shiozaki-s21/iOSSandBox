@@ -2,28 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46c4799d-d955-4276-9dce-e7e8fe3c5764" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthoringFirebaseApp/AppDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/AuthoringFirebaseApp/AppDelegate.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthoringFirebaseApp/Base.lproj/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/AuthoringFirebaseApp/Base.lproj/Main.storyboard" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AuthoringFirebaseApp/SignInViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/AuthoringFirebaseApp/SignInViewController.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/Podfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Podfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Manifest.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Manifest.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Firebase/Firebase.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Firebase/Firebase.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-AuthoringFirebaseApp/Pods-AuthoringFirebaseApp-acknowledgements.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-AuthoringFirebaseApp/Pods-AuthoringFirebaseApp-acknowledgements.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-AuthoringFirebaseApp/Pods-AuthoringFirebaseApp-acknowledgements.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-AuthoringFirebaseApp/Pods-AuthoringFirebaseApp-acknowledgements.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-AuthoringFirebaseApp/Pods-AuthoringFirebaseApp-frameworks-Debug-input-files.xcfilelist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-AuthoringFirebaseApp/Pods-AuthoringFirebaseApp-frameworks-Debug-input-files.xcfilelist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-AuthoringFirebaseApp/Pods-AuthoringFirebaseApp-frameworks-Debug-output-files.xcfilelist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-AuthoringFirebaseApp/Pods-AuthoringFirebaseApp-frameworks-Debug-output-files.xcfilelist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-AuthoringFirebaseApp/Pods-AuthoringFirebaseApp-frameworks-Release-input-files.xcfilelist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-AuthoringFirebaseApp/Pods-AuthoringFirebaseApp-frameworks-Release-input-files.xcfilelist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-AuthoringFirebaseApp/Pods-AuthoringFirebaseApp-frameworks-Release-output-files.xcfilelist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-AuthoringFirebaseApp/Pods-AuthoringFirebaseApp-frameworks-Release-output-files.xcfilelist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-AuthoringFirebaseApp/Pods-AuthoringFirebaseApp-frameworks.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-AuthoringFirebaseApp/Pods-AuthoringFirebaseApp-frameworks.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-AuthoringFirebaseApp/Pods-AuthoringFirebaseApp.debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-AuthoringFirebaseApp/Pods-AuthoringFirebaseApp.debug.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-AuthoringFirebaseApp/Pods-AuthoringFirebaseApp.release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-AuthoringFirebaseApp/Pods-AuthoringFirebaseApp.release.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-AuthoringFirebaseAppTests/Pods-AuthoringFirebaseAppTests.debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-AuthoringFirebaseAppTests/Pods-AuthoringFirebaseAppTests.debug.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-AuthoringFirebaseAppTests/Pods-AuthoringFirebaseAppTests.release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-AuthoringFirebaseAppTests/Pods-AuthoringFirebaseAppTests.release.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-AuthoringFirebaseAppUITests/Pods-AuthoringFirebaseAppUITests.debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-AuthoringFirebaseAppUITests/Pods-AuthoringFirebaseAppUITests.debug.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-AuthoringFirebaseAppUITests/Pods-AuthoringFirebaseAppUITests.release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-AuthoringFirebaseAppUITests/Pods-AuthoringFirebaseAppUITests.release.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthoringFirebaseApp/UserSettingViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/AuthoringFirebaseApp/UserSettingViewController.swift" afterDir="false" />
     </list>
     <ignored path="$USER_HOME$/Library/Caches/AppCode2019.1/DerivedData/AuthoringFirebaseApp-fpaibnkjqtsmcyglpixhkqwtyyxg/Build/Intermediates.noindex/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,11 +17,23 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/AuthoringFirebaseApp/AppDelegate.swift">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="216">
-                  <caret line="9" selection-start-line="9" selection-end-line="9" />
+                <state relative-caret-position="90">
+                  <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+                  <folding>
+                    <element signature="e#162#174#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/AuthoringFirebaseApp/UserSettingViewController.swift">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="432">
+                  <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
                 </state>
               </provider>
             </entry>
@@ -81,7 +73,7 @@
             <entry file="file://$PROJECT_DIR$/AuthoringFirebaseApp/SignInViewController.swift">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="712">
-                  <caret line="136" column="7" selection-start-line="136" selection-start-column="7" selection-end-line="136" selection-end-column="7" />
+                  <caret line="147" column="7" selection-start-line="147" selection-start-column="7" selection-end-line="147" selection-end-column="7" />
                   <folding>
                     <element signature="e#171#183#0" expanded="true" />
                   </folding>
@@ -96,8 +88,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/AuthoringFirebaseApp/SignInViewController.swift">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="424">
-                  <caret line="32" column="62" selection-start-line="32" selection-start-column="62" selection-end-line="32" selection-end-column="62" />
+                <state relative-caret-position="517">
+                  <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
                   <folding>
                     <element signature="e#171#183#0" expanded="true" />
                   </folding>
@@ -119,6 +111,7 @@
         <option value="$PROJECT_DIR$/AuthoringFirebaseApp/SignUpViewController.swift" />
         <option value="$PROJECT_DIR$/Podfile" />
         <option value="$PROJECT_DIR$/AuthoringFirebaseApp/AppDelegate.swift" />
+        <option value="$PROJECT_DIR$/AuthoringFirebaseApp/UserSettingViewController.swift" />
         <option value="$PROJECT_DIR$/AuthoringFirebaseApp/SignInViewController.swift" />
       </list>
     </option>
@@ -194,12 +187,12 @@
       <workItem from="1562353155337" duration="57000" />
       <workItem from="1562535676041" duration="4741000" />
       <workItem from="1562878385234" duration="661000" />
-      <workItem from="1562879647642" duration="1639000" />
+      <workItem from="1562879647642" duration="3009000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40464000" />
+    <option name="totallyTimeSpent" value="41834000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -262,13 +255,6 @@
     <entry file="appcode.project-settings://7005aa4d">
       <provider selected="true" editor-type-id="AppCode.ProjectSettings" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/AuthoringFirebaseApp/UserSettingViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AuthoringFirebaseApp/SignUpViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -288,15 +274,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AuthoringFirebaseApp/AppDelegate.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="90">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#162#174#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AuthoringFirebaseApp/UserSettingViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AuthoringFirebaseApp/SignInViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="32" column="62" selection-start-line="32" selection-start-column="62" selection-end-line="32" selection-end-column="62" />
+        <state relative-caret-position="517">
+          <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
           <folding>
             <element signature="e#171#183#0" expanded="true" />
           </folding>

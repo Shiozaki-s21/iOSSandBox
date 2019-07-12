@@ -31,6 +31,17 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
         // Login process
         print("Login")
         self.performSegue(withIdentifier: "signinToUserSetting", sender: nil)
+
+        // TODO To create user data
+        // uid, userName(what is a default?)
+        // How should I do about "Same User name problem"
+        // 1. accepted same name
+        // 2. to use uid and show it on public
+        // 3. create another id as a showing
+        // 4, create another random id as a showing
+        // 5. doesn't accepted same name
+
+
       }
     }
   }

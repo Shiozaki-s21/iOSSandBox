@@ -10,8 +10,11 @@ import UIKit
 import Firebase
 import FirebaseAuth
 import GoogleSignIn
+import FirebaseFirestore
 
 class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
+
+  let db = Firestore.firestore()
 
   func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
 
@@ -39,9 +42,32 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
         // 2. to use uid and show it on public
         // 3. create another id as a showing
         // 4, create another random id as a showing
-        // 5. doesn't accepted same name
+        // 5. doesn't accepted same name -> ☆
 
+        // check is login user existing on users on FireStore?
+        let user = self.db.collection("users").getDocuments() { (snap, err) in 
+          if let err = err {
+            print("error")
+          } else {
+            for document in snap!.documents {
+              print("start")
+              print(document.documentID)
+            }
+          }
+        }
+        // yes: move to login screen
 
+        // no: To create users
+        // To create user method
+        // TODO check rule for writing and reading on Firestore
+        let loginUser = Auth.auth().currentUser
+        var ref:DocumentReference? = nil
+        ref = self.db.collection("users").addDocument(data: [
+          "uid": String(loginUser!.uid),
+          "userName": "hugahuga",
+          "bio": "test",
+          "photoPath":""
+        ])
       }
     }
   }

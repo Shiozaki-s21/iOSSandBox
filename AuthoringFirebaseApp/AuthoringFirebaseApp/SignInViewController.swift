@@ -64,39 +64,6 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
           }
           self.performSegue(withIdentifier: "signinToUserSetting", sender: nil)
         }
-        
-        
-        
-        //          self.db.collection("users").whereField("uid", isEqualTo: loginUser!.uid).getDocuments() { (snaps, err) in
-        //          if let err = err {
-        //            print("Error for getting users")
-        //          } else {
-        //            // when users has same uid data
-        //            for document in snaps!.documents {
-        //              print("Do segueing without creating user data")
-        //              self.performSegue(withIdentifier: "signinToUserSetting", sender: nil)
-        //            }
-        //          }
-        //        }
-        
-        // if users doesn't have uid, segue ,create my information and segue
-        // To create user method
-        // TODO check rule for writing and reading on Firestore
-        //        var ref:DocumentReference? = nil
-        //        print("Do segueing with creating user data")
-        //        ref = self.db.collection("users").addDocument(data: [
-        //          "uid": String(loginUser!.uid),
-        //          "userName": "hugahuga",
-        //          "bio": "test",
-        //          "photoPath":""
-        //        ]) { err in
-        //          if let err = err {
-        //            print("Error adding document: \(err)")
-        //          } else {
-        //            print("Document added with ID: \(ref!.documentID)")
-        //          }
-        //        }
-//        self.performSegue(withIdentifier: "signinToUserSetting", sender: nil)
       }
     }
   }

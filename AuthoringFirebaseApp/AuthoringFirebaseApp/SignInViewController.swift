@@ -13,18 +13,18 @@ import GoogleSignIn
 import FirebaseFirestore
 
 class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
-
+  
   let db = Firestore.firestore()
-
+  
   func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-
+    
     if let error = error {
       return
     }
-
+    
     guard let authentication = user.authentication else { return }
     let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken, accessToken: authentication.accessToken)
-
+    
     // To sing-in process
     Auth.auth().signInAndRetrieveData(with: credential) { (authResult, error) in
       if let error = error {
@@ -33,8 +33,7 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
       } else {
         // Login process
         print("Login")
-        self.performSegue(withIdentifier: "signinToUserSetting", sender: nil)
-
+        
         // TODO To create user data
         // uid, userName(what is a default?)
         // How should I do about "Same User name problem"
@@ -43,77 +42,107 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
         // 3. create another id as a showing
         // 4, create another random id as a showing
         // 5. doesn't accepted same name -> ☆
-
-        // check is login user existing on users on FireStore?
-        let user = self.db.collection("users").getDocuments() { (snap, err) in 
+        
+        let loginUser = Auth.auth().currentUser
+        
+        let usersRef = self.db.collection("users")
+        
+        // To change to sync process
+        usersRef.whereField("uid", isEqualTo: loginUser!.uid).getDocuments(){ (snaps, err) in
           if let err = err {
-            print("error")
+            print("err")
           } else {
-            for document in snap!.documents {
-              print("start")
-              print(document.documentID)
+            if snaps!.isEmpty {
+              //               not existing user data
+              usersRef.addDocument(data: [
+                "uid": String(loginUser!.uid),
+                "userName": "hugahuga",
+                "bio": "test",
+                "photoPath":""
+              ])
             }
           }
+          self.performSegue(withIdentifier: "signinToUserSetting", sender: nil)
         }
-        // yes: move to login screen
-
-        // no: To create users
+        
+        
+        
+        //          self.db.collection("users").whereField("uid", isEqualTo: loginUser!.uid).getDocuments() { (snaps, err) in
+        //          if let err = err {
+        //            print("Error for getting users")
+        //          } else {
+        //            // when users has same uid data
+        //            for document in snaps!.documents {
+        //              print("Do segueing without creating user data")
+        //              self.performSegue(withIdentifier: "signinToUserSetting", sender: nil)
+        //            }
+        //          }
+        //        }
+        
+        // if users doesn't have uid, segue ,create my information and segue
         // To create user method
         // TODO check rule for writing and reading on Firestore
-        let loginUser = Auth.auth().currentUser
-        var ref:DocumentReference? = nil
-        ref = self.db.collection("users").addDocument(data: [
-          "uid": String(loginUser!.uid),
-          "userName": "hugahuga",
-          "bio": "test",
-          "photoPath":""
-        ])
+        //        var ref:DocumentReference? = nil
+        //        print("Do segueing with creating user data")
+        //        ref = self.db.collection("users").addDocument(data: [
+        //          "uid": String(loginUser!.uid),
+        //          "userName": "hugahuga",
+        //          "bio": "test",
+        //          "photoPath":""
+        //        ]) { err in
+        //          if let err = err {
+        //            print("Error adding document: \(err)")
+        //          } else {
+        //            print("Document added with ID: \(ref!.documentID)")
+        //          }
+        //        }
+//        self.performSegue(withIdentifier: "signinToUserSetting", sender: nil)
       }
     }
   }
-
+  
   func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
     // TODO Perform any operations when the user disconnects from app here.
   }
-
-
-
+  
+  
+  
   // label
   let titleLabel:UILabel = UILabel()
-
+  
   // textbox
   let emaliTextBox:UITextField = UITextField()
   let passwordTextBox:UITextField = UITextField()
-
+  
   // button
   let loginButton:UIButton = UIButton()
-
+  
   override func viewDidLoad() {
-
+    
     super.viewDidLoad()
     GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
     GIDSignIn.sharedInstance().delegate = self
-
+    
     // to create UI
-//    createSignInView()
-  createGoogleSignIn()
-
+    //    createSignInView()
+    createGoogleSignIn()
+    
     // to implement setting delegate
     GIDSignIn.sharedInstance().uiDelegate = self
     GIDSignIn.sharedInstance().signIn()
-
+    
   }
-
-
+  
+  
   fileprivate func createGoogleSignIn() {
     let googleButton:GIDSignInButton = GIDSignInButton()
     googleButton.translatesAutoresizingMaskIntoConstraints = false
     view.addSubview(googleButton)
     googleButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
     googleButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-
+    
   }
-
+  
   fileprivate func createSignInView() {
     // creating UI
     // title label
@@ -128,7 +157,7 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
     titleLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 30.0).isActive = true
     titleLabel.adjustsFontSizeToFitWidth = true
     titleLabel.adjustsFontForContentSizeCategory = true
-
+    
     // create group for input text boxes
     let inputStackView: UIStackView = UIStackView()
     view.addSubview(inputStackView)
@@ -140,19 +169,19 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
     inputStackView.axis = .vertical
     inputStackView.alignment = .center
     inputStackView.distribution = .fillProportionally
-
+    
     // implement emailTextBox
     inputStackView.addArrangedSubview(emaliTextBox)
     emaliTextBox.translatesAutoresizingMaskIntoConstraints = false
     emaliTextBox.widthAnchor.constraint(equalTo: inputStackView.widthAnchor).isActive = true
     emaliTextBox.placeholder = "email"
-
+    
     // implement passwordBox
     inputStackView.addArrangedSubview(passwordTextBox)
     passwordTextBox.translatesAutoresizingMaskIntoConstraints = false
     passwordTextBox.widthAnchor.constraint(equalTo: inputStackView.widthAnchor).isActive = true
     passwordTextBox.placeholder = "password"
-
+    
     // implement sign in button
     view.addSubview(loginButton)
     loginButton.translatesAutoresizingMaskIntoConstraints = false
@@ -164,7 +193,7 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
     loginButton.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.3).isActive = true
     
   }
-
+  
   @objc func tappedSignIn(sender:UIButton) {
     Auth.auth().signIn(withEmail: emaliTextBox.text!, password: passwordTextBox.text!) { (user, error) in
       if error != nil {

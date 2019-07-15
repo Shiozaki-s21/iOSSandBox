@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46c4799d-d955-4276-9dce-e7e8fe3c5764" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AuthoringFirebaseApp/SignInViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/AuthoringFirebaseApp/SignInViewController.swift" afterDir="false" />
     </list>
     <ignored path="$USER_HOME$/Library/Caches/AppCode2019.1/DerivedData/AuthoringFirebaseApp-fpaibnkjqtsmcyglpixhkqwtyyxg/Build/Intermediates.noindex/" />
@@ -14,7 +13,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_4AB9C132-67C9-4AE9-90F5-3379B7A7F679" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.18696275">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
@@ -32,8 +31,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/AuthoringFirebaseApp/UserSettingViewController.swift">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="432">
-                  <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+                <state relative-caret-position="240">
+                  <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
                 </state>
               </provider>
             </entry>
@@ -73,7 +72,7 @@
             <entry file="file://$PROJECT_DIR$/AuthoringFirebaseApp/SignInViewController.swift">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="3576">
-                  <caret line="173" column="7" selection-start-line="173" selection-start-column="7" selection-end-line="173" selection-end-column="7" />
+                  <caret line="202" column="7" selection-start-line="202" selection-start-column="7" selection-end-line="202" selection-end-column="7" />
                   <folding>
                     <element signature="e#171#183#0" expanded="true" />
                   </folding>
@@ -88,8 +87,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/AuthoringFirebaseApp/SignInViewController.swift">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="252">
-                  <caret line="61" column="63" selection-start-line="61" selection-start-column="63" selection-end-line="61" selection-end-column="63" />
+                <state relative-caret-position="474">
+                  <caret line="69" column="37" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
                   <folding>
                     <element signature="e#171#183#0" expanded="true" />
                   </folding>
@@ -100,6 +99,11 @@
         </leaf>
       </split-second>
     </splitter>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>segue</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -137,7 +141,26 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="AuthoringFirebaseApp" type="1d218c8b:XcodeProjectNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="AuthoringFirebaseApp" type="1d218c8b:XcodeProjectNode" />
+              <item name="AuthoringFirebaseApp" type="fcab9f18:XcodeViewNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Cidr.FilesView" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -188,12 +211,12 @@
       <workItem from="1562535676041" duration="4741000" />
       <workItem from="1562878385234" duration="661000" />
       <workItem from="1562879647642" duration="3740000" />
-      <workItem from="1562971804684" duration="1660000" />
+      <workItem from="1562971804684" duration="9578000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44225000" />
+    <option name="totallyTimeSpent" value="52143000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -208,7 +231,7 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.14608802" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14608802" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -285,15 +308,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AuthoringFirebaseApp/UserSettingViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+        <state relative-caret-position="240">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AuthoringFirebaseApp/SignInViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="61" column="63" selection-start-line="61" selection-start-column="63" selection-end-line="61" selection-end-column="63" />
+        <state relative-caret-position="474">
+          <caret line="69" column="37" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
           <folding>
             <element signature="e#171#183#0" expanded="true" />
           </folding>

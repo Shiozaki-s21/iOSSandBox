@@ -46,28 +46,44 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
         let loginUser = Auth.auth().currentUser
         
         let usersRef = self.db.collection("users")
-        
+
+        var userModel:UserModel?
         // To change to sync process
         usersRef.whereField("uid", isEqualTo: loginUser!.uid).getDocuments(){ (snaps, err) in
           if let err = err {
             print("err")
           } else {
             if snaps!.isEmpty {
-              //               not existing user data
+              // not existing user data
               usersRef.addDocument(data: [
                 "uid": String(loginUser!.uid),
                 "userName": "hugahuga",
                 "bio": "test",
                 "photoPath":""
               ])
+            } else {
+              let userData = snaps!.documents.first!
+
+              userModel = UserModel(uid: String.init(describing:userData["uid"]!), userName: String.init(describing: userData["userName"]!), bio: String.init(describing: userData["bio"]!), photoPath: String.init(describing: userData["photoPath"]!))
             }
           }
-          self.performSegue(withIdentifier: "signinToUserSetting", sender: nil)
+          // TODO To set user data to sender as a user model?
+          // -> Have to create model ?
+//          self.performSegue(withIdentifier: "signinToUserSetting", sender: userModel)
+          let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "UserSettingViewController") as! UserSettingViewController
+          nextVC.userModel = userModel
+          self.present(nextVC, animated: true)
+
         }
       }
     }
   }
-  
+
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+
+  }
+
   func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
     // TODO Perform any operations when the user disconnects from app here.
   }

@@ -78,22 +78,13 @@
             </objects>
             <point key="canvasLocation" x="-52" y="-177"/>
         </scene>
-        <!--View Controller-->
+        <!--User Setting View Controller-->
         <scene sceneID="Mky-hN-odC">
             <objects>
-                <viewController id="bPB-Hg-vpy" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserSettingViewController" id="bPB-Hg-vpy" customClass="UserSettingViewController" customModule="AuthoringFirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uHe-Qc-zCI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PhL-UZ-moF">
-                                <rect key="frame" x="186" y="414" width="42" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="VFG-lv-CGd"/>
                     </view>

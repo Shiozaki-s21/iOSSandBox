@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		09F8EE5FCAF99592BA165029 /* Pods_AuthoringFirebaseApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC3DF06D6143B2237BB1D71F /* Pods_AuthoringFirebaseApp.framework */; };
+		0C4D6E2E22DD34FE001C89EF /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4D6E2D22DD34FE001C89EF /* UserModel.swift */; };
 		0C4DE17322C059140087EFA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4DE17222C059140087EFA7 /* AppDelegate.swift */; };
 		0C4DE17522C059140087EFA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4DE17422C059140087EFA7 /* ViewController.swift */; };
 		0C4DE17822C059140087EFA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C4DE17622C059140087EFA7 /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C4D6E2D22DD34FE001C89EF /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		0C4DE16F22C059140087EFA7 /* AuthoringFirebaseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthoringFirebaseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C4DE17222C059140087EFA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C4DE17422C059140087EFA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				0C4DE17222C059140087EFA7 /* AppDelegate.swift */,
+				0C4D6E2D22DD34FE001C89EF /* UserModel.swift */,
 				0C4DE17422C059140087EFA7 /* ViewController.swift */,
 				0C58CA1822C5968500E74CCD /* SignInViewController.swift */,
 				0C4DE17622C059140087EFA7 /* Main.storyboard */,
@@ -409,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C4DE17522C059140087EFA7 /* ViewController.swift in Sources */,
+				0C4D6E2E22DD34FE001C89EF /* UserModel.swift in Sources */,
 				0C58CA1522C591A600E74CCD /* MenuViewController.swift in Sources */,
 				0C58CA1722C5954E00E74CCD /* SignUpViewController.swift in Sources */,
 				0C58CA1922C5968500E74CCD /* SignInViewController.swift in Sources */,

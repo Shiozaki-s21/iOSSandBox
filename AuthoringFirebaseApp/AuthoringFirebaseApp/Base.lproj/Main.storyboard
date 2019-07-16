@@ -85,10 +85,27 @@
                     <view key="view" contentMode="scaleToFill" id="uHe-Qc-zCI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVN-z8-QFF">
+                                <rect key="frame" x="78" y="158" width="258" height="234"/>
+                                <connections>
+                                    <action selector="uploadPhoto:" destination="bPB-Hg-vpy" eventType="touchUpInside" id="f9w-hY-0BD"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VFG-lv-CGd" firstAttribute="trailing" secondItem="pVN-z8-QFF" secondAttribute="trailing" constant="78" id="9wL-7B-UPP"/>
+                            <constraint firstItem="VFG-lv-CGd" firstAttribute="bottom" secondItem="pVN-z8-QFF" secondAttribute="bottom" constant="470" id="SWQ-4f-bxe"/>
+                            <constraint firstItem="pVN-z8-QFF" firstAttribute="top" secondItem="VFG-lv-CGd" secondAttribute="top" constant="114" id="UyH-Lx-Ic5"/>
+                            <constraint firstItem="pVN-z8-QFF" firstAttribute="leading" secondItem="VFG-lv-CGd" secondAttribute="leading" constant="78" id="xQI-wu-kmo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="VFG-lv-CGd"/>
                     </view>
                     <navigationItem key="navigationItem" id="tRf-qe-KuR"/>
+                    <connections>
+                        <outlet property="userPhoto" destination="pVN-z8-QFF" id="Mg7-H6-2Hm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hgE-rm-onO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

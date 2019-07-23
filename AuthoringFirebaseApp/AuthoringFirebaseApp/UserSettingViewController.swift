@@ -27,7 +27,33 @@ class UserSettingViewController: UIViewController {
     nameLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
     nameLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
 
-    //    userPhoto.translatesAutoresizingMaskIntoConstraints = false
+    userPhoto.translatesAutoresizingMaskIntoConstraints = false
+    userPhoto.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+    userPhoto.widthAnchor.constraint(equalToConstant: 512).isActive = true
+
+
+    // store picture here from fire storage
+    // create reference
+    let fileName: String = "userProfImage/" + userModel!.uid + ".png"
+    let storage = Storage.storage()
+    let pathReference = storage.reference(withPath: fileName)
+//    let gsReference = storage.reference(forURL: "gs://authoringtest-8a6bc.appspot.com/")
+    let gsReference = storage.reference()
+    gsReference.child(fileName)
+
+    // try to load picture data
+    pathReference.getData(maxSize: 1 * 128 * 128){ data, error in
+      if let error = error {
+        print("Error:" + error.localizedDescription)
+      } else {
+        print("load")
+        let image = UIImage(data: data!)
+        self.userPhoto.setImage(image, for: .normal)
+      }
+    }
+      // if data is existing, set it to view
+      // if it's not existing, set default picture
+
   }
 
   @IBAction func uploadPhoto(_ sender: UIButton) {
@@ -54,7 +80,7 @@ extension UserSettingViewController: UIImagePickerControllerDelegate {
 
     }
 
-    let fileName: String = "userProfImage/" + NSUUID().uuidString + "/" + userModel!.uid + ".png"
+    let fileName: String = "userProfImage/" + userModel!.uid + ".png"
     let reference = storageRef.child(fileName)
 
     // TODO have to create function whihc translation png -> data
@@ -66,10 +92,8 @@ extension UserSettingViewController: UIImagePickerControllerDelegate {
       }
     }
     dismiss(animated: true, completion: nil)
-
-
-
-
+    loadView()
+    viewDidLoad()
   }
 }
 
@@ -79,7 +103,6 @@ extension UserSettingViewController: UINavigationControllerDelegate {
       let controller = UIImagePickerController()
       controller.delegate = self
       controller.sourceType = .photoLibrary
-
       present(controller, animated: true, completion: nil)
     }
   }

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46c4799d-d955-4276-9dce-e7e8fe3c5764" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthoringFirebaseApp/Base.lproj/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/AuthoringFirebaseApp/Base.lproj/Main.storyboard" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AuthoringFirebaseApp/UserSettingViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/AuthoringFirebaseApp/UserSettingViewController.swift" afterDir="false" />
     </list>
     <ignored path="$USER_HOME$/Library/Caches/AppCode2019.1/DerivedData/AuthoringFirebaseApp-fpaibnkjqtsmcyglpixhkqwtyyxg/Build/Intermediates.noindex/" />
@@ -30,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AuthoringFirebaseApp/UserSettingViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="49" column="29" lean-forward="true" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
+            <state relative-caret-position="613">
+              <caret line="88" column="20" lean-forward="true" selection-start-line="88" selection-start-column="20" selection-end-line="88" selection-end-column="20" />
               <folding>
                 <element signature="e#176#188#0" expanded="true" />
               </folding>
@@ -76,6 +76,8 @@
     <findStrings>
       <find>segue</find>
       <find>imagePickerController</find>
+      <find>view</find>
+      <find>viewdid</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -186,12 +188,12 @@
       <workItem from="1562535676041" duration="4741000" />
       <workItem from="1562878385234" duration="661000" />
       <workItem from="1562879647642" duration="3740000" />
-      <workItem from="1562971804684" duration="37183000" />
+      <workItem from="1562971804684" duration="45275000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79748000" />
+    <option name="totallyTimeSpent" value="87840000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -206,7 +208,7 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.086797066" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11308069" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -310,8 +312,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AuthoringFirebaseApp/UserSettingViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="49" column="29" lean-forward="true" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
+        <state relative-caret-position="613">
+          <caret line="88" column="20" lean-forward="true" selection-start-line="88" selection-start-column="20" selection-end-line="88" selection-end-column="20" />
           <folding>
             <element signature="e#176#188#0" expanded="true" />
           </folding>
